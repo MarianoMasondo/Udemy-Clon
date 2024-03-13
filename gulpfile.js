@@ -16,7 +16,6 @@ function css( done ) {
 }
 
 function cssbuild( done ) {
-
     src('build/css/app.css')
         .pipe( rename({
             suffix: '.min'
@@ -30,7 +29,6 @@ function cssbuild( done ) {
 }
 
 function dev( done ) {
-    
     watch('src/scss/**/*.scss', css);
     watch('src/img/**/*', )
     done();
